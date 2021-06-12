@@ -12,6 +12,10 @@
       background-color: skyblue;
       cursor: pointer;
     }
+    .circle{
+      background:pink;
+      border-radius: 50%;
+    }
   </style>
 </head>
 <body>
@@ -22,7 +26,9 @@
     'use strict';
 
     document.getElementById('target').addEventListener('click', () => {
-      document.getElementById('target').style.background = 'pink';
+      // document.getElementById('target').style.background = 'pink';
+      // document.getElementById('target').style.borderRadius='50%';
+      document.getElementById('target').classList.add('circle');
     });
   </script>
 </body>
